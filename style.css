@@ -10,6 +10,12 @@ body {
   line-height: 1.6;
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
 .hero {
   min-height: 100vh;
   display: flex;
@@ -68,7 +74,171 @@ body {
   color: #ffffff;
 }
 
-/* Responsive adjustments */
+/* Projects Section */
+.projects {
+  padding: 6rem 0;
+  background-color: #ffffff;
+}
+
+.section-title {
+  font-family: "Oswald", sans-serif;
+  font-size: clamp(2.5rem, 6vw, 3.5rem);
+  font-weight: 700;
+  color: #ff6b6b;
+  text-transform: uppercase;
+  margin-bottom: 4rem;
+  text-align: center;
+  letter-spacing: -0.02em;
+}
+
+.project {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  margin-bottom: 5rem;
+  padding-bottom: 5rem;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.project:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.project-text h3 {
+  font-family: "Oswald", sans-serif;
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.project-text p {
+  font-size: 1.1rem;
+  color: #4a4a4a;
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+}
+
+.project-highlights {
+  list-style: none;
+}
+
+.project-highlights li {
+  font-size: 1rem;
+  color: #4ecdc4;
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  position: relative;
+  font-weight: 500;
+}
+
+.project-highlights li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: #ff6b6b;
+  font-weight: 700;
+}
+
+.project-image {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.project-image:hover {
+  transform: scale(1.02);
+}
+
+.project-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  color: #ffffff;
+  padding: 4rem 0 2rem;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.footer-brand h3 {
+  font-family: "Oswald", sans-serif;
+  font-size: 2rem;
+  color: #4ecdc4;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.footer-brand p {
+  color: #b0b0b0;
+  font-size: 1rem;
+}
+
+.footer-contact h4 {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.3rem;
+  color: #ff6b6b;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.footer-contact p {
+  margin-bottom: 0.5rem;
+  color: #d0d0d0;
+}
+
+.footer-contact a {
+  color: #4ecdc4;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-contact a:hover {
+  color: #ff6b6b;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 2rem;
+  border-top: 1px solid #404040;
+}
+
+.footer-bottom p {
+  color: #808080;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+  .project {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .project-image {
+    order: -1;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
 @media (max-width: 768px) {
   .hero {
     padding: 1.5rem;
@@ -77,5 +247,14 @@ body {
   .cta-button {
     padding: 0.9rem 2rem;
     font-size: 1rem;
+  }
+
+  .projects {
+    padding: 4rem 0;
+  }
+
+  .project {
+    margin-bottom: 3rem;
+    padding-bottom: 3rem;
   }
 }
