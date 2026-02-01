@@ -105,17 +105,6 @@ body {
   font-weight: 700;
 }
 
-.project-image-wrapper {
-  width: 100%;
-  overflow: hidden;
-}
-
-.project-image-wrapper img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
 footer {
   background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
   color: #ffffff;
@@ -155,21 +144,4 @@ footer {
 
 .footer-contact a:hover {
   color: #ff6b6b;
-}
-
-@media (min-width: 768px) {
-  .project-image-wrapper img {
-    max-height: 400px;
-    object-fit: cover;
-  }
-}
-
-@media (min-width: 992px) {
-  .projects .container {
-    max-width: 1200px;
-  }
-
-  .project-image-wrapper img {
-    max-height: 450px;
-  }
 }
