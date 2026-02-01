@@ -10,26 +10,36 @@
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Work+Sans:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <section class="hero">
-      <div class="hero-content">
-        <h1>Authentischer Content.<br />Keine Floskeln.</h1>
-        <p>
-          Ich entwickle LinkedIn-Strategien für Startups und Unternehmen, die
-          sich trauen, anders zu klingen.
-        </p>
-        <a href="about.html#contact" class="cta-button">Lass uns sprechen</a>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10 text-center hero-content">
+            <h1>Authentischer Content.<br />Keine Floskeln.</h1>
+            <p>
+              Ich entwickle LinkedIn-Strategien für Startups und Unternehmen,
+              die sich trauen, anders zu klingen.
+            </p>
+            <a href="about.html#contact" class="btn cta-button"
+              >Lass uns sprechen</a
+            >
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="projects">
+    <section class="projects py-5">
       <div class="container">
-        <h2 class="section-title">Projekte</h2>
+        <h2 class="section-title text-center mb-5">Projekte</h2>
 
-        <div class="project">
-          <div class="project-text">
+        <div class="row align-items-center mb-5 pb-5 border-bottom project">
+          <div class="col-md-6 order-md-1 order-2">
             <h3>AgriTech Startup - LinkedIn Neustart</h3>
             <p>
               Vom generischen Unternehmenssprech zu authentischen Founder
@@ -37,19 +47,25 @@
               die Landwirte wirklich anspricht – ohne Buzzwords, mit echten
               Einblicken.
             </p>
-            <ul class="project-highlights">
+            <ul class="list-unstyled project-highlights">
               <li>Content Pillars neu definiert</li>
               <li>Brand Voice von Grund auf entwickelt</li>
               <li>Engagement um 340% gesteigert</li>
             </ul>
           </div>
-          <div class="project-image">
-            <img src="image/social1.jpeg" alt="AgriTech LinkedIn Content" />
+          <div class="col-md-6 order-md-2 order-1 mb-4 mb-md-0">
+            <div class="project-image">
+              <img
+                src="image/social1.jpeg"
+                alt="AgriTech LinkedIn Content"
+                class="img-fluid rounded"
+              />
+            </div>
           </div>
         </div>
 
-        <div class="project">
-          <div class="project-text">
+        <div class="row align-items-center mb-5 pb-5 border-bottom project">
+          <div class="col-md-6 order-md-1 order-2">
             <h3>Retail Business - Social Media Transformation</h3>
             <p>
               Von sporadischen Posts zu konsistenter Markenpräsenz. Wir haben
@@ -57,19 +73,25 @@
               digitaler Reichweite verbindet – authentisch und ohne
               Marketing-Blabla.
             </p>
-            <ul class="project-highlights">
+            <ul class="list-unstyled project-highlights">
               <li>Redaktionsplan für 3 Plattformen</li>
               <li>Community-Building-Strategie</li>
               <li>Lokale Sichtbarkeit verdreifacht</li>
             </ul>
           </div>
-          <div class="project-image">
-            <img src="image/social2.png" alt="Retail Social Media Strategy" />
+          <div class="col-md-6 order-md-2 order-1 mb-4 mb-md-0">
+            <div class="project-image">
+              <img
+                src="image/social2.png"
+                alt="Retail Social Media Strategy"
+                class="img-fluid rounded"
+              />
+            </div>
           </div>
         </div>
 
-        <div class="project">
-          <div class="project-text">
+        <div class="row align-items-center project">
+          <div class="col-md-6 order-md-1 order-2">
             <h3>Tech Startup - Thought Leadership aufgebaut</h3>
             <p>
               3 Co-Founder, null LinkedIn-Präsenz. Gemeinsam haben wir ihre
@@ -77,45 +99,54 @@
               Storytelling statt Corporate-Speak, mit Haltung statt
               Hashtag-Spam.
             </p>
-            <ul class="project-highlights">
+            <ul class="list-unstyled project-highlights">
               <li>Individuelle Content-Strategien entwickelt</li>
               <li>Thought Leadership etabliert</li>
               <li>Organische Reichweite aufgebaut</li>
             </ul>
           </div>
-          <div class="project-image">
-            <img
-              src="image/social3.jpeg"
-              alt="Tech Startup LinkedIn Strategy"
-            />
+          <div class="col-md-6 order-md-2 order-1 mb-4 mb-md-0">
+            <div class="project-image">
+              <img
+                src="image/social3.jpeg"
+                alt="Tech Startup LinkedIn Strategy"
+                class="img-fluid rounded"
+              />
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <footer id="contact">
+    <footer id="contact" class="py-5">
       <div class="container">
-        <div class="footer-content">
-          <div class="footer-brand">
-            <h3>Social Media</h3>
-            <p>LinkedIn Content Strategie für Startups & Unternehmen</p>
+        <div class="row mb-4">
+          <div class="col-md-6 mb-4 mb-md-0">
+            <div class="footer-brand">
+              <h3>Social Media</h3>
+              <p>LinkedIn Content Strategie für Startups & Unternehmen</p>
+            </div>
           </div>
-          <div class="footer-contact">
-            <h4>Kontakt</h4>
-            <p>
-              Email:
-              <a href="mailto:hello@caroposts.com">hello@caro.com</a>
-            </p>
-            <p>
-              LinkedIn:
-              <a href="https://linkedin.com/in/caroposts" target="_blank"
-                >linkedin.com/in/caro</a
-              >
-            </p>
+          <div class="col-md-6">
+            <div class="footer-contact">
+              <h4>Kontakt</h4>
+              <p>
+                Email:
+                <a href="mailto:hello@caro.com">hello@caro.com</a>
+              </p>
+              <p>
+                LinkedIn:
+                <a href="https://linkedin.com/in/caroposts" target="_blank"
+                  >linkedin.com/in/caro</a
+                >
+              </p>
+            </div>
           </div>
         </div>
         <div class="footer-bottom"></div>
       </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
